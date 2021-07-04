@@ -35,6 +35,7 @@ const HomePosts = () => {
                         homePosts.posts.map((item) => (
                             <div key={item.id}>
                                 <img
+                                    alt="description"
                                     style={{ width: '100%', height: '200px' }}
                                     src={item.image}
                                 />
