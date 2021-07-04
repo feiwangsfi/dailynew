@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
-    - run: npm test
+    # - run: npm test
     - name: deploy to staging
       if: github.event_name == 'push'
       run: npx surge --project ./build --domain obnoxious-steam.surge.sh
